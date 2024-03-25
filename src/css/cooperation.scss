@@ -1,0 +1,244 @@
+$primary: #a65cf0;
+$gray: #999999;
+$black: #333333;
+$secondary: #ff862f;
+$secondary_light: #ffbd59;
+$secondary_shade: #bb370e;
+$grey_light: #f6f6f6;
+$gray_shade: #666666;
+$gold: #d5b986;
+$md_gray: #eaeaea;
+$white: #ffffff;
+$bone: #fff5d1;
+$pink_violete: #ebd1ff;
+$primary_shade: #7033ac;
+$pink_light: #f8efff;
+$primary_light: #c998fb;
+
+@mixin backgroundImage(
+  $path,
+  $size: cover,
+  $position: center center,
+  $repeat: no-repeat
+) {
+  background-image: url($path);
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+
+.menu-cooperation {
+  padding: 0 0 20px;
+}
+
+.cooperation {
+  padding-bottom: 70px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 843px;
+  }
+  &__heading {
+    margin-bottom: 34px;
+  }
+  &__subheading {
+    margin-bottom: 13px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $black;
+  }
+  &__text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    color: $gray_shade;
+
+    &-suppliers {
+      margin-bottom: 32px;
+    }
+  }
+  &__gives {
+    display: flex;
+    flex-direction: column;
+    max-width: 624px;
+    margin-bottom: 32px;
+  }
+  &__give {
+    padding-left: 37px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $gray_shade;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &-first {
+      @include backgroundImage(
+        "../img/cooperation/plus1.svg",
+        25px 25px,
+        top left
+      );
+    }
+    &-second {
+      @include backgroundImage(
+        "../img/cooperation/plus2.svg",
+        25px 25px,
+        top left
+      );
+    }
+    &-third {
+      @include backgroundImage(
+        "../img/cooperation/plus3.svg",
+        25px 25px,
+        top left
+      );
+    }
+  }
+  &__pluses {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+  &__plus {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  &__title {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: $secondary;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    list-style: none;
+    counter-reset: num;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 816px;
+    padding-left: 27px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    color: $gray_shade;
+
+    &::before {
+      content: counter(num) ".";
+      counter-increment: num;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 180%;
+      color: $secondary;
+    }
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  &__guarantee {
+    max-width: 624px;
+    padding: 22px 0 22px 109px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $black;
+    @include backgroundImage(
+      "../img/cooperation/pen.png",
+      77px 100%,
+      left center
+    );
+  }
+}
+
+@media (max-width: 1024px) {
+  .cooperation {
+    &__item {
+      max-width: 837px;
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    &-cooperation {
+      padding: 0 0 23px;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .menu {
+    &-cooperation {
+      padding: 0 0 28px;
+    }
+  }
+  .breadcrump {
+    display: none;
+  }
+  .cooperation {
+    &__guarantee {
+      max-width: 320px;
+      padding: 0 0 0 52px;
+      background-image: url("../img/cooperation/pen-sm.png");
+      background-size: 36px 100%;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .cooperation {
+    padding-bottom: 68px;
+    &__subheading {
+      margin-bottom: 11px;
+      font-size: 16px;
+      &-sm {
+        font-size: 14px;
+      }
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__give {
+      font-size: 14px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__list{
+      margin-bottom: 30px;
+    }
+    &__item {
+      font-size: 14px;
+
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+}
