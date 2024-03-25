@@ -1,0 +1,365 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title SitDownPls
+    link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="libs/simplebar.css")
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="css/catalog.css")
+  body
+    h1.hidden SitDownPls
+    header.menu
+      .menu-top
+        .container
+          .menu-top__content
+            .menu-top__contact
+              a.menu-top__home(href="index.html" aria-label="перейти на главную страницу")
+                  svg.menu-top__logo(width="187" height="27")
+                    use(xlink:href="img/sprite.svg#logo")
+              .menu-top__sm
+                a.menu-top__phone(href="tel:+74958854547" aria-label="Позвонить нам +74958854547")
+                  svg.menu-top__mobile(width="16.5" height="16.5")
+                    use(xlink:href="img/sprite.svg#phone")
+                  span.menu-top__teltext +7 (495) 885-45-47
+                .menu-top__btns.menu-top__btns-sm
+                    button.menu-top__profile.profile(aria-label="Перейти в личный кабинет")
+                      svg.menu-top__user.user(width="26" height="28")
+                        use(xlink:href="img/sprite.svg#user")
+                    button.menu-top__card.basket(aria-label="Перейти в корзину")
+                      span.menu-top__count.count 0
+                      svg.menu-top__shop.shop(width="30" height="28")
+                        use(xlink:href="img/sprite.svg#shop")
+            nav.menu-top__links
+              ul.menu-top__items
+                li.menu-top__item
+                  a.menu-top__link.link(href="#") О компании
+                li.menu-top__item
+                  a.menu-top__link.link(href="#") Гарантия и возврат
+                li.menu-top__item
+                  a.menu-top__link.link(href="cooperation.html") Корпоративным клиентам
+                li.menu-top__item
+                  a.menu-top__link.link(href="#") Дизайн-решение
+              .menu-top__btns
+                  button.menu-top__profile.profile(aria-label="Перейти в личный кабинет")
+                    svg.menu-top__user.user(width="26" height="28")
+                      use(xlink:href="img/sprite.svg#user")
+                  button.menu-top__card.basket(aria-label="Перейти в корзину")
+                    span.menu-top__count.count 0
+                    svg.menu-top__shop.shop(width="30" height="28")
+                      use(xlink:href="img/sprite.svg#shop")
+      .menu-bottom
+        .container
+          .menu-bottom__content
+            .menu-bottom__top
+              .menu-bottom__start
+                a.menu-bottom__home(href="index.html" aria-label="перейти на главную страницу")
+                  svg.menu-bottom__logo(width="187" height="27")
+                    use(xlink:href="img/sprite.svg#logo")
+                .menu-bottom__btns.menu-bottom__btns-md
+                  button.menu-bottom__profile.profile(aria-label="Перейти в личный кабинет")
+                    svg.menu-bottom__user.user(width="26" height="28")
+                      use(xlink:href="img/sprite.svg#user")
+                  button.menu-bottom__card.basket(aria-label="Перейти в корзину")
+                    span.menu-bottom__count.count 0
+                    svg.menu-bottom__shop.shop(width="30" height="28")
+                      use(xlink:href="img/sprite.svg#shop")
+              nav.menu-bottom__links(data-simplebar)
+                ul.menu-bottom__list
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="catalog.html") Каталог
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Магазины
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Шоу-рум
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Доставка и оплата
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Дисконт
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Контакты
+            .menu-bottom__bottom
+              .menu-bottom__search
+                input.menu-bottom__input(type="text" placeholder="Я хочу купить...")
+                button.menu-bottom__dropdown(aria-label="Начать поиск")
+                  svg.menu-bottom__drop.svgbtn(xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewbox='0 0 32 32' fill='none')
+                    g(clip-path='url(#clip0_3870_933)')
+                      circle(cx='16' cy='16' r='15' stroke='#A65CF0' stroke-width='2')
+                      path(d='M14 11L19 16L14 21' stroke='#A65CF0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                    defs
+                      clippath
+                        rect(width='32' height='32' fill='white')
+                svg.menu-bottom__find(width="20" height="20")
+                  use(xlink:href="img/sprite.svg#search")
+              .menu-bottom__btns
+                button.menu-bottom__profile.profile(aria-label="Перейти в личный кабинет")
+                  svg.menu-bottom__user.user(width="26" height="28")
+                    use(xlink:href="img/sprite.svg#user")
+                button.menu-bottom__card.basket(aria-label="Перейти в корзину")
+                  span.menu-bottom__count.count 0
+                  svg.menu-bottom__shop.shop(width="30" height="28")
+                    use(xlink:href="img/sprite.svg#shop")
+    nav.breadcrump
+      .container
+        ul.breadcrump__list
+          li.breadcrump__item
+            a.breadcrump__link(href="index.html") Главная
+          li.breadcrump__item
+            a.breadcrump__link(href="#") Каталог
+          li.breadcrump__item
+            a.breadcrump__link(href="#") Диваны
+          li.breadcrump__item
+            a.breadcrump__link.breadcrump__link-opened(href="#" aria-current="page") Прямые диваны
+
+    main.content
+      .container
+        .content__content
+          .content__parts
+            section.filter
+              h2.subheading.filter__heading.filter__heading-md Каталог
+              h2.subheading.filter__heading Фильтровать по:
+              .filter__content
+                .filter__properties
+                  .filter__colors
+                    p.filter__title Цвет
+                    label.filter__label.label-checkbox(for="brown")
+                      input.filter__checkbox.checkbox(id="brown" type="checkbox")
+                      span.filter__text.filter__text-checkbox Коричневый
+                    label.filter__label.label-checkbox(for="black")
+                      input.filter__checkbox.checkbox(id="black" type="checkbox" checked)
+                      span.filter__text.filter__text-checkbox Черный
+                    label.filter__label.label-checkbox(for="blue")
+                      input.filter__checkbox.checkbox(id="blue" type="checkbox")
+                      span.filter__text.filter__text-checkbox Синий
+                    label.filter__label.label-checkbox(for="white")
+                      input.filter__checkbox.checkbox(id="white" type="checkbox")
+                      span.filter__text.filter__text-checkbox Белый
+                  .filter__categories
+                    p.filter__title Категория
+                    label.filter__label.label-checkbox(for="sofa")
+                      input.filter__checkbox.checkbox(id="sofa" type="checkbox" checked)
+                      span.filter__text.filter__text-checkbox Диваны
+                    label.filter__label.label-checkbox(for="armchair")
+                      input.filter__checkbox.checkbox(id="armchair" type="checkbox")
+                      span.filter__text.filter__text-checkbox Кресла
+                .filter__price
+                  p.filter__title.filter__title-price Цена
+                  .filter__range
+                    label.filter__label(for="from")
+                      span.filter__text.filter__text-from от
+                      input.filter__input(id="from" type="number" value="2000" min="2000" max="150000")
+                    label.filter__label(for="to")
+                      span.filter__text.filter__text-to до
+                      input.filter__input(id="to" type="number" value="150000" min="2000" max="150000")
+            aside.ad
+              h2.ad__heading #[span.ad__heading-styled Оксфорд 1950] Новая коллекция изысканных кресел
+              a.ad__catalog(href="catalog.html")
+                span.ad__incatalog.incatalog В каталог
+                svg.ad__arrow.svgbtn(xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewbox='0 0 32 32' fill='none')
+                  g(clip-path='url(#clip0_3870_933)')
+                    circle(cx='16' cy='16' r='15' stroke='#A65CF0' stroke-width='2')
+                    path(d='M14 11L19 16L14 21' stroke='#A65CF0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                  defs
+                    clippath
+                      rect(width='32' height='32' fill='white')
+
+          section.high.catalog
+            h2.subheading.high__heading.catalog__heading Каталог
+            ul.high__content.catalog__content
+              li.high__item.high__item-one
+                article.high__product.high__product-one.card
+                  span.high__rating.rating 5,0
+                  .high__img
+                    picture.high__picture
+                      source(srcset="img/high/sm/high1.png" media="(max-width: 640px)")
+                      img.high__picture(src="img/high/high1.png", alt="картинка дивана кожанного “R-94”")
+                  .high__card
+                    h3.high__name Диван кожаный #[br] “R-94”
+                    span.high__price 94 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-two
+                article.high__product.high__product-two.card
+                  span.high__rating.rating 4,9
+                  .high__img
+                    picture.high__picture
+                      source(srcset="img/high/sm/high2.png" media="(max-width: 640px)")
+                      img.high__picture(src="img/high/high2.png", alt="картинка Дивана апартекового “T-75”")
+                  .high__card
+                    h3.high__name Диван апартековый #[br] “T-75”
+                    span.high__price 69 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-three
+                article.high__product.high__product-three.card
+                  span.high__rating.rating 4,8
+                  .high__img
+                    picture.high__picture
+                      source(srcset="img/high/sm/high3.png" media="(max-width: 640px)")
+                      img.high__picture(src="img/high/high3.png", alt="картинка Дивана тканевого “D-31”")
+                  .high__card
+                    h3.high__name Диван тканевый #[br] “D-31”
+                    span.high__price 28 490 руб
+                    a.high__buy(href="card.html") Купить
+              li.high__item.high__item-four
+                article.high__product.high__product-four.card
+                  span.high__rating.rating 4,8
+                  .high__img
+                    picture.high__picture
+                      source(srcset="img/high/sm/high4.png" media="(max-width: 640px)")
+                      img.high__picture(src="img/high/high4.png", alt="картинка Дивана велюрового “Y-68”")
+                  .high__card
+                    h3.high__name Диван велюровый #[br] “Y-68”
+                    span.high__price 22 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-five
+                article.high__product.high__product-five.card
+                  span.high__rating.rating 4,8
+                  .high__img
+                    picture.high__picture
+                      source(srcset="img/high/sm/high5.png" media="(max-width: 640px)")
+                      img.high__picture(src="img/high/high5.png", alt="картинка Дивана из шинила “W-95”")
+                  .high__card
+                    h3.high__name Диван из шинила #[br] “W-95”
+                    span.high__price 22 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-six
+                article.high__product.high__product-six.card
+                  span.high__rating.rating 4,8
+                  .high__img
+                    picture.high__picture
+                      source(srcset="img/high/sm/high6.png" media="(max-width: 640px)")
+                      img.high__picture(src="img/high/high6.png", alt="картинка Дивана флокового “G-41”")
+                  .high__card
+                    h3.high__name Диван флоковый #[br] “G-41”
+                    span.high__price 17 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-seven
+                article.high__product.high__product-seven.card
+                  span.high__rating.rating 4,8
+                  .high__img
+                    img.high__picture(src="img/high/high7.png", alt="картинка Дивана шинилового “V-43”")
+                  .high__card
+                    h3.high__name Диван шиниловый #[br] “V-43”
+                    span.high__price 19 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-eight
+                article.high__product.high__product-eight.card
+                  span.high__rating.rating 4,7
+                  .high__img
+                    img.high__picture(src="img/high/high8.png", alt="картинка Дивана велюровый “S-99”")
+                  .high__card
+                    h3.high__name Диван велюровый #[br] “S-99”
+                    span.high__price 19 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-nine
+                article.high__product.high__product-nine.card
+                  span.high__rating.rating 4,7
+                  .high__img
+                    img.high__picture(src="img/high/high9.png", alt="картинка Дивана велюровый “S-99”")
+                  .high__card
+                    h3.high__name Диван из кожзама #[br] “F-85”
+                    span.high__price 26 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-ten
+                article.high__product.high__product-ten.card
+                  span.high__rating.rating 4,5
+                  .high__img
+                    img.high__picture(src="img/high/high10.png", alt="картинка Дивана велюровый “R-85”")
+                  .high__card
+                    h3.high__name Диван велюровый #[br] “R-85”
+                    span.high__price 34 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-eleven
+                article.high__product.high__product-eleven.card
+                  span.high__rating.rating 4,6
+                  .high__img
+                    img.high__picture(src="img/high/high11.png", alt="картинка Дивана флокового “H-58”")
+                  .high__card
+                    h3.high__name Диван флоковый #[br] “H-58”
+                    span.high__price 23 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-twelwe
+                article.high__product.high__product-twelwe.card
+                  span.high__rating.rating 4,6
+                  .high__img
+                    img.high__picture(src="img/high/high12.png", alt="картинка Дивана велюрового “S-44”")
+                  .high__card
+                    h3.high__name Диван велюровый #[br] “S-44”
+                    span.high__price 19 990 руб
+                    a.high__buy(href="#") Купить
+              li.high__item.high__item-thirteen
+                article.high__product.high__product-thirteen.card
+                  span.high__rating.rating 4,8
+                  .high__img
+                    img.high__picture(src="img/high/high13.png", alt="картинка Дивана шинилового “V-43”")
+                  .high__card
+                    h3.high__name Диван шиниловый #[br] “V-43”
+                    span.high__price 19 990 руб
+                    a.high__buy(href="#") Купить
+            .catalog__pagination
+              button.catalog__button.catalog__button-one.catalog__button-selected 1
+              button.catalog__button.catalog__button-two 2
+              button.catalog__button.catalog__button-three 3
+
+    footer.footer
+      .footer__content
+        .container
+          .footer__top
+            .footer-left
+              a.footer-left__home(href="#" aria-label="перейти на главную страницу")
+                svg.footer-left__logo(width="187" height="27")
+                  use(xlink:href="img/sprite.svg#logo")
+              ul.footer-left__list
+                li.footer-left__item
+                  a.footer-left__link(href="#" aria-label="Мы в одноклассниках")
+                    svg.footer-left__logo(width="30" height="30")
+                      use(xlink:href="img/sprite.svg#ok")
+                li.footer-left__item
+                  a.footer-left__link(href="#" aria-label="Мы в вконтакте")
+                    svg.footer-left__logo(width="30" height="30")
+                      use(xlink:href="img/sprite.svg#vk")
+            nav.footer-right
+              .footer-right__block
+                p.footer-right__heading О нас
+                ul.footer-right__list
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") О компании
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Блог
+              .footer-right__block
+                p.footer-right__heading Услуги
+                ul.footer-right__list
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Доставка
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Рассрочка и кредит
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Сборка и установка
+              .footer-right__block
+                p.footer-right__heading Связь с нами
+                ul.footer-right__list
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Обратная связь
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Контакты
+              .footer-right__block
+                p.footer-right__heading Сотрудничество
+                ul.footer-right__list
+                  li.footer-right__item
+                    a.footer-right__link.link(href="cooperation.html") Поставщикам
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Оптовикам
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Карьера
+      .footer__bottom
+        span.footer__copy SDP&reg;&nbsp; 2011-2021
+    script(src="libs/simplebar.min.js")
+    script(src="js/script.js")
+
+
+
+
+
+

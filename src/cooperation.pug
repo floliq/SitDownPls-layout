@@ -1,0 +1,199 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title SitDownPls
+    link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="libs/simplebar.css")
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="css/cooperation.css")
+  body
+    h1.hidden SitDownPls
+    header.menu
+      .menu-top
+        .container
+          .menu-top__content
+            .menu-top__contact
+              a.menu-top__home(href="index.html" aria-label="перейти на главную страницу")
+                  svg.menu-top__logo(width="187" height="27")
+                    use(xlink:href="img/sprite.svg#logo")
+              .menu-top__sm
+                a.menu-top__phone(href="tel:+74958854547" aria-label="Позвонить нам +74958854547")
+                  svg.menu-top__mobile(width="16.5" height="16.5")
+                    use(xlink:href="img/sprite.svg#phone")
+                  span.menu-top__teltext +7 (495) 885-45-47
+                .menu-top__btns.menu-top__btns-sm
+                    button.menu-top__profile.profile(aria-label="Перейти в личный кабинет")
+                      svg.menu-top__user.user(width="26" height="28")
+                        use(xlink:href="img/sprite.svg#user")
+                    button.menu-top__card.basket(aria-label="Перейти в корзину")
+                      span.menu-top__count.count 0
+                      svg.menu-top__shop.shop(width="30" height="28")
+                        use(xlink:href="img/sprite.svg#shop")
+            nav.menu-top__links
+              ul.menu-top__items
+                li.menu-top__item
+                  a.menu-top__link.link(href="#") О компании
+                li.menu-top__item
+                  a.menu-top__link.link(href="#") Гарантия и возврат
+                li.menu-top__item
+                  a.menu-top__link.link(href="cooperation.html") Корпоративным клиентам
+                li.menu-top__item
+                  a.menu-top__link.link(href="#") Дизайн-решение
+              .menu-top__btns
+                  button.menu-top__profile.profile(aria-label="Перейти в личный кабинет")
+                    svg.menu-top__user.user(width="26" height="28")
+                      use(xlink:href="img/sprite.svg#user")
+                  button.menu-top__card.basket(aria-label="Перейти в корзину")
+                    span.menu-top__count.count 0
+                    svg.menu-top__shop.shop(width="30" height="28")
+                      use(xlink:href="img/sprite.svg#shop")
+      .menu-bottom
+        .container
+          .menu-bottom__content
+            .menu-bottom__top
+              .menu-bottom__start
+                a.menu-bottom__home(href="index.html" aria-label="перейти на главную страницу")
+                  svg.menu-bottom__logo(width="187" height="27")
+                    use(xlink:href="img/sprite.svg#logo")
+                .menu-bottom__btns.menu-bottom__btns-md
+                  button.menu-bottom__profile.profile(aria-label="Перейти в личный кабинет")
+                    svg.menu-bottom__user.user(width="26" height="28")
+                      use(xlink:href="img/sprite.svg#user")
+                  button.menu-bottom__card.basket(aria-label="Перейти в корзину")
+                    span.menu-bottom__count.count 0
+                    svg.menu-bottom__shop.shop(width="30" height="28")
+                      use(xlink:href="img/sprite.svg#shop")
+              nav.menu-bottom__links(data-simplebar)
+                ul.menu-bottom__list
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="catalog.html") Каталог
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Магазины
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Шоу-рум
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Доставка и оплата
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Дисконт
+                  li.menu-bottom__item
+                    a.menu-bottom__link(href="#") Контакты
+            .menu-bottom__bottom
+              .menu-bottom__search
+                input.menu-bottom__input(type="text" placeholder="Я хочу купить...")
+                button.menu-bottom__dropdown(aria-label="Начать поиск")
+                  svg.menu-bottom__drop.svgbtn(xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewbox='0 0 32 32' fill='none')
+                    g(clip-path='url(#clip0_3870_933)')
+                      circle(cx='16' cy='16' r='15' stroke='#A65CF0' stroke-width='2')
+                      path(d='M14 11L19 16L14 21' stroke='#A65CF0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                    defs
+                      clippath#clip0_3870_933
+                        rect(width='32' height='32' fill='white')
+                svg.menu-bottom__find(width="20" height="20")
+                  use(xlink:href="img/sprite.svg#search")
+              .menu-bottom__btns
+                button.menu-bottom__profile.profile(aria-label="Перейти в личный кабинет")
+                  svg.menu-bottom__user.user(width="26" height="28")
+                    use(xlink:href="img/sprite.svg#user")
+                button.menu-bottom__card.basket(aria-label="Перейти в корзину")
+                  span.menu-bottom__count.count 0
+                  svg.menu-bottom__shop.shop(width="30" height="28")
+                    use(xlink:href="img/sprite.svg#shop")
+    nav.breadcrump
+      .container
+        ul.breadcrump__list
+          li.breadcrump__item
+            a.breadcrump__link(href="index.html") Главная
+          li.breadcrump__item
+            a.breadcrump__link.breadcrump__link-opened(href="#") Сотрудничество
+    main
+      section.cooperation
+        .container
+          h2.cooperation__heading.subheading Сотрудничество
+          .cooperation__content
+            h3.cooperation__subheading Поставщикам
+            p.cooperation__text.cooperation__text-suppliers При планировании обстановки торгового помещения важно обустроить его с комфортом для покупателей: грамотно зонировать, обеспечить эффективную демонстрацию и хранение товаров в зале. Если вам необходимо комплексное оснащение, организация зоны отдыха или отдельные предметы меблировки для поддержания эффективной торговой деятельности, мы поможем выбрать продукцию с учетом нагрузки от поступающего трафика.
+            h3.cooperation__subheading Что вы получаете?
+            ul.cooperation__gives
+              li.cooperation__give.cooperation__give-first Мы ценим идеи и вдохновение и предлагаем сотрудничество талантливым дизайнерам и архитекторам. Выпускаемая нами продукция гармонично дополнит любой современный проект.
+              li.cooperation__give.cooperation__give-second Комплексное решение для красивого и функционального обустройства любых пространств.
+              li.cooperation__give.cooperation__give-third В ассортименте представлены все товарные группы для того, чтобы воссоздать обстановку в помещениях разных типов: кабинетах, смешанных пространствах, Open Space, гостевых и переговорных комнатах.
+            h3.cooperation__subheading.cooperation__subheading-sm Ваши преимущества от сотрудничества
+            ul.cooperation__pluses
+              li.cooperation__plus
+                p.cooperation__title Возможность 1:
+                p.cooperation__text Создавайте незабываемые впечатления. Красиво меблированная фотостудия не оставит клиентов равнодушными, а созданная интерьером атмосфера будет надолго запечатлена на их снимках. Стильная и разноплановая обстановка творческого пространства – ключевая составляющая его успешной деятельности. Позаботьтесь о людях в кадре, а мы поможем правильно выбрать мебель.
+              li.cooperation__plus
+                p.cooperation__title Возможность 2:
+                p.cooperation__text Мы предлагаем застройщикам, работающим на территории РФ, участие наших специалистов от этапа проектирования обстановки квартир и подбора комплексных интерьерных решений до оптовых поставок мебели. Поможем организовать демонстрационный зал с образцами изделий и материалов на площади нового здания, чтобы покупатель заблаговременно подобрал тот вариант меблировки, который удовлетворит даже самые взыскательные ожидания.
+            h3.cooperation__subheading Гарантии
+            ol.cooperation__list
+              li.cooperation__item При приемке товара Покупатель должен внимательно проверить его количество, качество и ассортимент на соответствие сопроводительным документам и заказу. После подписания товарного чека Покупатель утрачивает право предъявления претензий, которые можно выявить при приемке товара.
+              li.cooperation__item На товары, сборка которых производилась покупателем самостоятельно (не специалистами Продавца), гарантийные обязательства Продавца не распространяются. Также гарантия не распространяется на повреждения товара, полученные в ходе самостоятельной доставки и подъема товара. Покупатель не вправе отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, т.е. если товар может быть использован исключительно приобретающим его потребителем.
+              li.cooperation__item Возврат или обмен товара возможен при условии, что сохранена упаковка, товарный вид и потребительские свойства товара, а также товарный и кассовый чеки. В этом случае мы гарантируем вам возврат полной стоимости товара (за вычетом стоимости доставки). В случае отказа от товара при доставке, клиент оплачивает услуги доставки.
+            p.cooperation__guarantee Срок гарантии на нашу мебель составляет от 18 до 60 месяцев
+
+
+    footer.footer
+      .footer__content
+        .container
+          .footer__top
+            .footer-left
+              a.footer-left__home(href="#" aria-label="перейти на главную страницу")
+                svg.footer-left__logo(width="187" height="27")
+                  use(xlink:href="img/sprite.svg#logo")
+              ul.footer-left__list
+                li.footer-left__item
+                  a.footer-left__link(href="#" aria-label="Мы в одноклассниках")
+                    svg.footer-left__logo(width="30" height="30")
+                      use(xlink:href="img/sprite.svg#ok")
+                li.footer-left__item
+                  a.footer-left__link(href="#" aria-label="Мы в вконтакте")
+                    svg.footer-left__logo(width="30" height="30")
+                      use(xlink:href="img/sprite.svg#vk")
+            nav.footer-right
+              .footer-right__block
+                p.footer-right__heading О нас
+                ul.footer-right__list
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") О компании
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Блог
+              .footer-right__block
+                p.footer-right__heading Услуги
+                ul.footer-right__list
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Доставка
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Рассрочка и кредит
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Сборка и установка
+              .footer-right__block
+                p.footer-right__heading Связь с нами
+                ul.footer-right__list
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Обратная связь
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Контакты
+              .footer-right__block
+                p.footer-right__heading Сотрудничество
+                ul.footer-right__list
+                  li.footer-right__item
+                    a.footer-right__link.link(href="cooperation.html") Поставщикам
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Оптовикам
+                  li.footer-right__item
+                    a.footer-right__link.link(href="#") Карьера
+      .footer__bottom
+        span.footer__copy SDP&reg;&nbsp; 2011-2021
+    script(src="libs/simplebar.min.js")
+    script(src="js/script.js")
+
+
+
+
+
+
